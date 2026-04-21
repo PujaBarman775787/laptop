@@ -27,13 +27,17 @@ body{
   font-family:'Manrope', sans-serif;
   background:var(--bg);
   color:var(--text);
+  padding-top:80px;
+}
+section{
+  width:100%;
 }
 /* RESPONSIVE BASE */
 .container{
   width:100%;
-  max-width:1400px;
-  margin:auto;
-  padding:0 20px;
+  max-width:1200px;   /* 🔥 fixed layout width */
+  margin:0 auto;
+  padding:0 24px;     /* side spacing */
 }
 
 img{
@@ -49,11 +53,8 @@ img{
   left:0;
   width:100%;
 
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-
-  padding:20px 60px;
+  
+  padding:20px 0;
 
   background:var(--glass);
   backdrop-filter: blur(20px);
@@ -62,6 +63,11 @@ img{
   border-bottom:1px solid rgba(255,255,255,0.04);
 
   z-index:1000;
+}
+.nav-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 .nav::after{
   content:"";
@@ -105,7 +111,7 @@ img{
   height:100vh;
   display:flex;
   align-items:center;
-  padding:120px 80px 0;
+ 
   overflow:hidden;
   background:#050505;
 }
@@ -186,9 +192,7 @@ img{
   border-radius:6px;
 }
 /* ARRIVALS */
-.arrivals{
-  padding:100px 80px;
-}
+
 
 .arr-header{
   display:flex;
@@ -447,7 +451,7 @@ img{
 /* BANNERS */
 /* SECTION */
 .banners{
-  padding:100px 80px;
+  
   background:var(--surface);
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -528,7 +532,7 @@ img{
 /* FOOTER */
 .footer{
   background:var(--surface);
-  padding:100px 80px 40px;
+  
 }
 
 /* GRID */
@@ -588,6 +592,18 @@ img{
   content:"\1F310   \1F512"; /* globe + lock */
   font-size:14px;
   opacity:0.5;
+}
+.hero{
+  padding:120px 0 0;
+}
+
+.arrivals,
+.banners{
+  padding:100px 0;
+}
+
+.footer{
+  padding:100px 0 40px;
 }
 
 
